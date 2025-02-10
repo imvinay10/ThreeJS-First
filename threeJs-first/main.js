@@ -9,7 +9,8 @@ const texture = textureLoader.load('./src/assets/Bump_2K.png');
 
 const scene = new THREE.Scene;
 const geometry = new THREE.SphereGeometry( 5, 64, 64 );
-const material = new THREE.MeshStandardMaterial({color:"#da26e0", roughness:0.4,map:texture })
+// const material = new THREE.MeshStandardMaterial({color:"#da26e0", roughness:0.4,map:texture })
+const material = new THREE.MeshStandardMaterial({color:"#da26e0", roughness:0.4})
 
 const mesh = new THREE.Mesh(geometry, material)
 scene.add(mesh)
